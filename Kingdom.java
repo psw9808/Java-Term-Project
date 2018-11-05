@@ -2,7 +2,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Kingdom{ // 메인 클래스 Kingdom 제작 박선우 
+class Kingdom{ // 메인 클래스 Kingdom 
 	public static void main(String[]args){
 		
 		Scanner userinput = new Scanner(System.in);
@@ -39,7 +39,7 @@ class Kingdom{ // 메인 클래스 Kingdom 제작 박선우
 	}
 }
 
-class Systems{ // 시스템 클래스 (시작/끝) 제작 박선우 
+class Systems{ // 시스템 클래스 (시작/끝) 
 	
 	void start(){ // 시작 (파일 입출력,예외처리)
 		try{
@@ -88,7 +88,7 @@ class Systems{ // 시스템 클래스 (시작/끝) 제작 박선우
 	}
 }
 
-class Statesbase{ // State 클래스의 상속을 위한 Super클래스 제작 이윤정
+class Statesbase{ // State 클래스의 상속을 위한 Super클래스 
 	void ending(){
 		System.out.println();
 		System.out.println("[엔딩 발생]");
@@ -96,7 +96,7 @@ class Statesbase{ // State 클래스의 상속을 위한 Super클래스 제작 이윤정
 	}
 }
 
-class States extends Statesbase{ // State 클래스 제작 이윤정
+class States extends Statesbase{ // State 클래스 
 	public int year;
 	public int army;
 	public int money;
@@ -320,7 +320,7 @@ class States extends Statesbase{ // State 클래스 제작 이윤정
 	}
 }
 
-class Events{ // 이벤트 클래스 제작 우창민
+class Events{ // 이벤트 클래스 
 	String event,result,icon,temp;
 	int start = 0,end = 0,eventnum=0,count=0;
 	static int random1=0;
@@ -407,7 +407,7 @@ class Events{ // 이벤트 클래스 제작 우창민
 	
 }
 
-class NotRightNumberException extends Exception{ //예외처리 제작 박선우
+class NotRightNumberException extends Exception{ //예외처리 
 	NotRightNumberException(){
 		super("1또는 2가 아닌 숫자 예외");
 	}
